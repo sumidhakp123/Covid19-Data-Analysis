@@ -27,14 +27,14 @@ For the presentation used M.S. PowerPoint with the help of team members.
 #  Methodology
 1. Import the data from API using the requests library.
 2. The imported data was in JSON format hence we used JSON library to read the data.
-3. 3. We looked for null values and replaced them with zero, looking for duplicates.
+3. We looked for null values and replaced them with zero, looking for duplicates.
 4. Stated analyzing the data by using pandas functions like group by, sort_values, etc.
 5. Used nested 'for' loops to extract the relevant data from the nested dictionary.
-6. 6. Extracted the individual state data from the data frame in CSV format and imported data into MySQL.
+6. Extracted the individual state data from the data frame in CSV format and imported data into MySQL.
 7. Aggregated the distribution by month and week wise for each state.
 8. Imported the aggregated data into Excel for further Analysis.
  # Conclusions
-Focusing on the weekly progression of COVID-19 cases, recoveries, deaths, and tests, the study offers valuable insights into the pandemic's impact across various regions and timeframes.
-Observations revealed fluctuations in the number of cases and deaths, emphasizing the dynamic nature of the pandemic's effects in different geographical areas.
-Through effective data visualization employing charts and graphs, this work enhances data clarity, facilitating the interpretation of trends and patterns.
-The findings have practical importance for public health authorities, equipping them with the means to formulate more targeted and efficient strategies for curbing the virus's spread.
+1. Focusing on the weekly progression of COVID-19 cases, recoveries, deaths, and tests, the study offers valuable insights into the pandemic's impact across various regions and timeframes.
+2. Observations revealed fluctuations in the number of cases and deaths, emphasizing the dynamic nature of the pandemic's effects in different geographical areas.
+3. Through effective data visualization employing charts and graphs, this work enhances data clarity, facilitating the interpretation of trends and patterns.
+4. The findings have practical importance for public health authorities, equipping them with the means to formulate more targeted and efficient strategies for curbing the virus's spread.
