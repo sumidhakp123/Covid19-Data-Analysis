@@ -1,40 +1,61 @@
-# Covid19-Data-Analysis
-Data Extraction from JSON, Data Cleaning, and In-Depth Analysis: A COVID-19 Project
-Introduction
-COVID-19, caused by the SARS-CoV-2 virus, has been a global respiratory pandemic since 2019. It can lead to mild or severe symptoms, impacting every aspect of our lives. To mitigate its spread, preventive measures like vaccination, mask usage, and social distancing are crucial. Research and cooperation are essential in its management.
+# COVID-19 Data Analysis
 
-Problem Aimed to Solve
-This project's objective is to conduct an analysis of the COVID-19 pandemic using publicly accessible data. It encompasses a Jupyter notebook containing Python code for the extraction, cleansing, and visualization of COVID-19 data from diverse sources. Moreover, the project offers an interactive dashboard for exploring this data.
+A data analysis project that collects, cleans, and explores publicly available COVID-19 data to understand trends in cases, recoveries, deaths, and testing across regions and time.
 
-# 📈COVID-19_ANALYSIS - 📑Brief Summary
-Used Pandas and Json to gather data from API and then data cleaning.
+## Project overview
 
-For K.P.I.’s and insights Used SQL to get useful data sets.
+The workflow combines Python data extraction and cleaning, SQL-based analysis, and spreadsheet visualization. The project also includes an interactive dashboard for exploring the data.
 
-Then transferred datasets to Excel for visualization.
+## Workflow
 
-For the presentation used M.S. PowerPoint with the help of team members.
+1. Retrieve COVID-19 data from a public API using Python's `requests` library.
+2. Parse JSON responses and extract relevant fields.
+3. Clean the data by handling missing values and checking for inconsistencies and duplicates.
+4. Use Pandas to transform and aggregate the data.
+5. Export state-level data and load it into MySQL for KPI analysis.
+6. Aggregate trends by week and month, then use Excel for visualization.
 
-# 🪨Challenges and 🧠learnings-
-*JSON Data Extraction*: Skillfully navigated nested JSON structures to extract pertinent COVID-19 information.
+## Questions and indicators
 
-*Data Cleaning*: Addressed missing values and discrepancies in COVID-19 data to ensure precise analysis.
+The analysis examines the progression of cases, recoveries, deaths, and tests across locations and time periods. The goal is to make changes and regional differences easier to explore through aggregated data and charts.
 
-*Code Optimization*: Enhanced processing efficiency for extensive COVID-19 datasets, improving overall performance.
+## Tools
 
-*Domain Understanding*: Developed insights into public health and epidemiology by analyzing COVID-19 data.
+- **Python:** Requests, JSON, Pandas
+- **Database:** MySQL
+- **Visualization:** Microsoft Excel
+- **Presentation:** Microsoft PowerPoint
 
-#  Methodology
-1. Import the data from API using the requests library.
-2. The imported data was in JSON format hence we used JSON library to read the data.
-3. We looked for null values and replaced them with zero, looking for duplicates.
-4. Stated analyzing the data by using pandas functions like group by, sort_values, etc.
-5. Used nested 'for' loops to extract the relevant data from the nested dictionary.
-6. Extracted the individual state data from the data frame in CSV format and imported data into MySQL.
-7. Aggregated the distribution by month and week wise for each state.
-8. Imported the aggregated data into Excel for further Analysis.
- # Conclusions
-1. Focusing on the weekly progression of COVID-19 cases, recoveries, deaths, and tests, the study offers valuable insights into the pandemic's impact across various regions and timeframes.
-2. Observations revealed fluctuations in the number of cases and deaths, emphasizing the dynamic nature of the pandemic's effects in different geographical areas.
-3. Through effective data visualization employing charts and graphs, this work enhances data clarity, facilitating the interpretation of trends and patterns.
-4. The findings have practical importance for public health authorities, equipping them with the means to formulate more targeted and efficient strategies for curbing the virus's spread.
+## Getting started
+
+### Prerequisites
+
+- Python 3
+- Jupyter Notebook (if using the included notebook)
+- MySQL, if running the SQL analysis
+- Excel or a compatible spreadsheet application for the visualizations
+
+### Setup
+
+1. Clone or download this repository.
+2. Install the Python packages used by the project:
+   ```bash
+   python -m pip install pandas requests
+   ```
+3. Open the included notebook in Jupyter and run the data extraction and cleaning steps in order.
+4. Follow the SQL files and data exports in the repository to load the prepared data into MySQL and reproduce the analysis.
+
+Review the notebook and source files for the specific API endpoint, dataset fields, and database setup.
+
+## Key learnings
+
+- Extracting data from nested JSON structures
+- Cleaning missing and inconsistent values
+- Transforming and aggregating data with Pandas
+- Querying datasets with SQL
+- Communicating trends through charts and dashboards
+
+## Author
+
+[Sumidha Kumari Prasad](https://github.com/sumidhakp123)
+
